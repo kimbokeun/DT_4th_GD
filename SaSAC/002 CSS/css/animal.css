@@ -1,0 +1,37 @@
+* {
+  color: red;
+}
+
+h1 {
+  background-color: pink;
+}
+
+p {
+  background-color: navy;
+}
+
+.second {
+  background-color: cyan;
+}
+
+.small {
+  background-color: yellow;
+}
+
+.dog {
+  color: silver;
+}
+
+/* 
+  #(id) : id 선택자
+*/
+
+#first {
+  background-color: lightgreen;
+}
+
+/* 
+  id vs class
+  - class : 그룹
+  - id : 고유
+*/

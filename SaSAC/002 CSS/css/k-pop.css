@@ -1,0 +1,32 @@
+/* 하위(후손) 선택자 : 공백(띄어쓰기) */
+
+body section {
+  /* 테두리(경계선) : 두께 선스타일 선색상 */
+  border: 1px solid gray;
+}
+
+body section h2 {
+  border: 1px solid sienna;
+}
+
+/* 자식 선택자 : < (x) > (o) */
+
+/* 인접 형제 선택자 : + */
+/* 주의) */
+#whiplash + li {
+  background-color: cyan;
+}
+
+/* 일반 형제 선택자 : ~ */
+#whiplash ~ li {
+  color: brown;
+}
+
+/* CSS 색상 */
+/*
+  1. 색상 키워드
+  2. 16진수 코드
+    - 0 ~ 9, a, b, c, d, e, f
+    - Red(--), Green(--), Blue(--)
+  3. rgb(0~255, 0~255, 0~255)
+*/

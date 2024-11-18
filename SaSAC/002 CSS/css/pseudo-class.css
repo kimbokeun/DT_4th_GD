@@ -1,0 +1,80 @@
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+}
+
+.div1:hover {
+  width: 150px;
+  height: 150px;
+  background-color: moccasin;
+}
+
+.div1:active {
+  width: 200px;
+  background-color: brown;
+}
+
+input:focus {
+  color: orange;
+  background-color: orangered;
+  border-color: orchid;
+}
+
+.links > a:hover {
+  background-color: tan;
+}
+
+.links > a:visited {
+  color: indigo;
+}
+
+.zoo > * {
+  color: blueviolet;
+  background-color: gold;
+}
+
+.zoo > *:first-child {
+  background-color: yellowgreen;
+}
+
+.zoo > *:last-child {
+  background-color: forestgreen;
+}
+
+.zoo > *:nth-child(2) {
+  background-color: cadetblue;
+}
+
+.zoo > *:nth-child(2n) {
+  background-color: cornflowerblue;
+}
+
+.zoo > *:nth-child(2n + 1) {
+  background-color: chartreuse;
+}
+
+.zoo > *:not(div) {
+  background-color: chocolate;
+}
+
+.box::before {
+  content: "택시";
+}
+
+.box::after {
+  content: "삘리";
+}
+
+/* 속성 선택자 */
+[disabled] {
+  color: gainsboro;
+}
+
+[type="password"] {
+  color: blanchedalmond;
+}
+
+[placeholder] {
+  background-color: aquamarine;
+}

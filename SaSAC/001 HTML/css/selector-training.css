@@ -1,0 +1,36 @@
+h1:hover {
+    color: white;
+    background-color: black;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+textarea:focus {
+    background-color: skyblue;
+}
+
+[type="checkbox"] {
+}
+
+[type="checkbox"]:checked {
+}
+
+label::after {
+    content: "😆";
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: yellow;
+}
+
+input:checked + label {
+    background-color: lightgray;
+}
+
+button:active {
+    color: white;
+    background-color: gray;
+}

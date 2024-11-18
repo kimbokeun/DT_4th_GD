@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form과 Form 요소</title>
+</head>
+<body>
+  <h1>폼 관련 태그를 알아보자!</h1>
+  <!-- 
+    form tag
+    - 사용자로부터 입력받는 요소 태그
+    - Attribute
+      - action : 사용자가 폼에 입력한 값을 전달할 주소
+      - method : 사용자가 폼에 입력한 값을 전달할 방법(GET, POST)
+      => 서버 관련 내용
+  -->
+  <!-- form 태그 안에 작성하면 서버에 전송가능 -->
+  <form action="">
+    <!--
+      input / textarea / select ...
+      - Attribut
+        name : 이름 지정(서버가 어떤 폼 요소에 어떤 값이 입력되있는지 구별하는 key 역할)  
+    -->
+    <!-- 
+      label 태그의 for 속성값과 input 태그의 id 속성값을 일치
+      label 글씨를 클릭했을 때 input 창에 포
+      - 웹접근성에 적합
+    -->
+    <ul type="none">
+      <li>
+        <label for="user-email">이메일</label>
+        <input type="email" id="user-email" autofocus>
+      </li>
+      <li>
+        <label for="">Color</label>
+        <input type="text" disabled>
+      </li>
+      <li>
+        <label for="">Question 003</label>
+        <input type="text" value="안녕" readonly>
+      </li>
+    </ul>
+
+    <ul type="none">
+      <li><input type="color"></li>
+      <li><input type="range"></li>
+      <li><input type="file"></li>
+      <li><input type="number"></li>
+      <li><input type="date"></li>
+      <li><input type="datetime-local"></li>
+      <li><input type="password"></li>
+    </ul>
+
+    <!-- 
+      radio input vs. checkbox input
+      - 같은 name 속성값을 부여, '카테고리'화 해줘야햐 함
+      - checked 속성 : 해당 옵션이 기본으로 체크된 상태
+    -->
+
+    <h5>당신의 취미은 무엇인가요?</h5>
+    <input type="checkbox" name="interest" value="volleyball">배구
+    <input type="checkbox" name="interest" value="movie">영화
+    <input type="checkbox" name="interest" value="drama">드라마
+    
+    <h5>당신의 성별은 무엇인가요?</h5>
+    <input type="radio" name="gender" value="male" id="male" for="male">
+    <label for="male">여자</label>
+    <input type="radio" name="gender" value="female" id="female" for="female">
+    <label for="female">남자</label>
+
+    <hr>
+
+    <!-- 
+      textarea
+      -  input보다 더 많은 양의 내용(여러 줄)을 입력
+      - cols, rows : 가로, 세로 길이
+      - 사용자가 마우스 커서를 이용, 우측 하단을 조절, 크기 변경 가능
+    -->
+
+    <textarea
+      placeholder="문의사항을 입력해주세요."
+      cols="30"
+      rows="10"
+    ></textarea>
+
+    <hr>
+
+    <select name="flowers" id="">
+      <optgroup label="red-flower">
+        <option value="장미">장미</option>
+        <option value="튤립">튤립</option>
+        <option value="코스모스">코스모스</option>
+      </optgroup>
+      <optgroup label="white-flower">
+        <option value="국화">국화</option>
+        <option value="무궁화">무궁화</option>
+      </optgroup>
+    </select>
+    
+    <hr>
+
+    <!-- 
+      fieldset
+      - 그룹화
+      legend
+      - 그룹화한 제목
+    -->
+    <fieldset>
+      <legend>개인 정보</legend>
+      <lebel for="name">이름</lebel>
+      <input type="text" id="name" />
+      <lebel for="name">이름</lebel>
+      <input type="text" id="name" />
+    </fieldset>
+
+    <!-- 
+      참고. type 속성을 생략한 button 태그
+      - type 속성 : button, submit 값 사용 가능
+      - button type : 폼 태그 바깥에 button 태그가 있을 때 기본 값
+      - sumit type
+    -->
+    <button></button>
+
+
+  </form>
+</body>
+</html>

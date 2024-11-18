@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+h1:hover {
+    color: red;
+}
+
+a:active {
+    background-color: blue;
+}
+
+input:focus {
+    background-color: orange;
+}
+
+.fruits span:first-child {
+    color: purple;
+}
+
+.fruits *:last-child {
+    color: cyan;
+}
+
+.fruits *:nth-child(2) {
+    color: olive;
+}
+
+/* 두번째 요소들마다 */
+.fruits *:nth-child(2n) {
+    color: hotpink;
+    font-weight: bold; 
+}
+
+.stripes * {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: navy;
+}
+
+.stripes *:nth-child(2) {
+    color: black;
+    background-color: yellow;
+}
+
+.stripes *:nth-child(6) {
+    color: black;
+    background-color: yellow;
+}
+
+.stripes *:nth-child(10) {
+    color: black;
+    background-color: yellow;
+}
+
+.box::before {
+    content: "택시";
+}
+
+.box::after {
+    content: "빨리";
+}
+
+[disabled] {
+    background-color: red;;
+}
+
+[placeholder="이름"] {
+    background-color: orange;
+}
+
+.form *:not([placeholder]) {
+    background-color: blue;
+}
