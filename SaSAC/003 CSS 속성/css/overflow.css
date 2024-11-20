@@ -1,0 +1,45 @@
+/* 
+CSS Reset(브라우저 초기화)
+  - 브라우저 자체 기본 설정 여백 제거
+  - 일관된 디자인 구현을 위해
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* 
+Overflow
+- 컨텐츠가 너무 크거나, 길어서 크기보다 넘치게 된다면?
+- visible(default) : 벗어난 부분 표시
+- hidden : 벗어난 부분 숨김
+- scroll : 스크롤 생성
+- auto : 넘친다면 스크롤, 아니면 스크롤 x 
+
+내용이 넘쳐 흘렀을 때 자동으로 개행되는 것은 브라우저의 기본동작. CSS 속성으로 변경 가능
+
+*/
+
+
+.box {
+  width: 500px;
+  height: 200px;
+  overflow: scroll;
+  background-color: tomato;
+}
+
+/*
+텍스트의 공백, 줄바꿈(개행) 처리방식 제어 
+white-space: normal(default);
+*/
+.no-wrap {
+  white-space: nowrap;
+}
+

@@ -12,22 +12,34 @@ textarea:focus {
     background-color: skyblue;
 }
 
+.checkbox {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 [type="checkbox"] {
+    display: none;
 }
 
-[type="checkbox"]:checked {
-}
-
-label::after {
+label::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     content: "😆";
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+    border-radius: 8px;
     background-color: yellow;
 }
 
-input:checked + label {
-    background-color: lightgray;
+input:checked + label:before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    border-color: orange;
+    background-color: green;
 }
 
 button:active {

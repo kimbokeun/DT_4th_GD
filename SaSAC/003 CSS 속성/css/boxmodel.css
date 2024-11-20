@@ -1,0 +1,109 @@
+
+hr {
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+}
+
+.wrapper {
+  height: 200px;
+  background-color: orange;
+}
+
+.--box {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+}
+
+.box-html {
+  background-color: lightblue;
+}
+
+.box-css {
+  background-color: lightcoral;
+}
+
+.box-js {
+  background-color: lightgreen;
+}
+
+.square {
+  width: 20vw;
+  height: 20vh;
+  color: white;
+  text-align: center;
+  line-height: 20vh;
+  background-color: olive;
+}
+
+.margin {
+  margin-top: 1000px;
+  margin-bottom: 1000px;
+}
+
+.box-border {
+  width: 40vw;
+  height: 40vh;
+  line-height: 40vh;
+  text-align: center;
+}
+
+.border-style {
+  border-top: 2px solid orangered;
+  border-right: 4px dotted lightblue;
+  border-bottom: 8px dashed lightpink;
+  border-left: 16px dashed lightseagreen;
+}
+
+.border-radius {
+  border-top: 2px solid orangered;
+  border-right: 4px dotted lightblue;
+  border-bottom: 8px dashed lightpink;
+  border-left: 16px dashed lightseagreen;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 32px;
+}
+
+:root {
+  --spacing: 8px;
+}
+
+.box-model {
+  margin: calc(var(--size) *2) 10px;
+  background-color: cadetblue;
+}
+
+/* 
+
+Box-sizing
+- content-box
+- border-box
+
+*/
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.content-box {
+  box-sizing: content-box;
+  border-color: purple;
+  background-color: lightsalmon;
+}
+
+.border-box {
+  box-sizing: border-box;
+  border-color: blue;
+  background-color: lightsteelblue
+}

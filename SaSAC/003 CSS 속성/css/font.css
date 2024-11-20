@@ -1,0 +1,89 @@
+
+
+/* 
+웹 폰트
+- 구글 웹폰트, 눈누 웹폰트(대중적)
+- 모든 브라우저에서 보여지는 폰트 통일
+- 폰트를 다운로드x link 태그에 걸려 있는 주소에서 폰트를 가져오는 방식
+- 기본 폰트는 body, *, root, html 등에 작성
+
+
+@font-face
+- CSS에서 웹폰트를 정의하기 위해 사용되는 규칙
+- 이를 통해 웹사이트에 사용자 정의 폰트를 추가하고,
+- 사용자 기기에 폰트가 설치되어 있지 않아도 사용할 수 있도록 폰트를 가져올 수 있음.
+*/
+
+body {
+  /* font-family: "Noto Sans KR", sans-serif; */
+  /* 앞 폰트가 없을시, sans-serif로 대체 */
+  font-optical-sizing: auto;
+  /* 텍스트의 크기에 따라 글꼴 디자이너가 의도한 세부 모양으로 자동 조절 */
+}
+
+@font-face {
+  font-family: 'ChosunCentennial';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.web-font {
+  font-family: "Gowun Batang", serif;
+}
+
+.font-face {
+  font-family: "ChosunCentennial";
+}
+
+.text-property {
+  color: rgb(201, 151, 151);
+  font-size: 30px;
+  font-weight: 100;
+  font-style: oblique 45deg;
+  text-align: center;
+  text-decoration: line-through;
+  line-height: 1.5;
+  /* 1.2(default) */
+}
+
+.box-wrapper {
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+
+.default {
+  display: inline-block;
+  width: 20vw;
+  height: 100px;
+  margin-right: 10px;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  background-color: cornflowerblue;
+}
+
+.display {
+  background-color: lightgreen;
+}
+
+.display:hover {
+  display: none;
+}
+
+.opacity {
+  background-color: lightcoral;
+}
+
+.opacity:hover {
+  opacity: 0;
+}
+
+.visibility {
+  background-color: lightseagreen;
+}
+
+.visibility:hover {
+  visibility: hidden;
+}

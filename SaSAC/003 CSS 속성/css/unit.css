@@ -1,0 +1,117 @@
+/* 전역 속성 */
+html {
+  font-size: 10px;
+}
+
+.box {
+  margin-bottom: 100px;
+}
+
+/* 
+
+# CSS 단위
+
+1. 절대 단위(Absolute Units)
+  - 특정한 물리적 길이, 고정된 크기 의미
+  - 주로 인쇄 매체에서 사용
+  ex) px / pt / inch / cm ..
+
+  a. px
+    - 화면의 픽셀 하나에 해당
+
+2. 상대 단위(Realtive Units)
+  - 다른 길이 값에 상대적 크기 지정
+  - 반응형 디자인에 유용
+  ex) % / em / rem / vw / vh ..
+
+  a. %
+    - 상위 요소의 상대적인 크기
+  b. em
+    - font-size 값에 비례, 결정
+    - 상위 요소 크기에 비례
+    - 중첩되는 특징이 있어 자주 사용하지 x
+  c. rem
+    - root em 약
+    - 최상위 요소(html) 글꼴 크기에 비례
+    - 중첩 영향을 받지 않음
+
+*/
+
+.px {
+  width: 100px;
+  height: 100px;
+  background-color: tan;
+}
+
+.percent-parents {
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+}
+
+.percent-child {
+  width: 80%;
+  height: 80%;
+  background-color: bisque;
+}
+
+
+.em {
+  font-size: 2em;
+}
+
+.case1 {
+  font-size: 20px;
+}
+
+.case2 {
+  font-size: 10px;
+}
+
+.em-3 {
+  font-size: 3em;
+}
+
+.rem {
+  font-size: 2rem;
+}
+
+/* 
+
+ # CSS 변수
+  1. 변수 이름 : --로 시작
+  2. 사용법
+    - "var(변수명)" -> var()함수 사용
+  3. 전역 변수
+    - :root / html / body / *
+  4. 지역 변수
+
+*/
+
+:root {
+  --color-success: blue;
+  --color-error: red;
+  --color-white: white;
+
+  --color-primary:;
+}
+
+.button {
+  --size: 8px;
+  color: var(--color-white);
+  padding: var(--size);
+  border: none;
+  border-radius: var(--size)
+}
+
+.button.confirm {
+  --color : 
+}
+
+.button.success {
+  background-color: var(--color-success);
+}
+
+.button.error {
+  background-color: var(--color-error);
+}

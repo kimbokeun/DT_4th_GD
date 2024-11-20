@@ -1,0 +1,34 @@
+.d-inline1 {
+  display: inline;
+  background-color: lightseagreen;
+}
+
+.d-inline2 {
+  display: inline;
+  background-color: lightsalmon;
+}
+
+.d-block1 {
+  display: block;
+  background-color: lightseagreen;
+}
+
+.d-block2 {
+  display: block;
+  background-color: lightsalmon;
+}
+
+.d-inline-block1 {
+  display: inline-block;
+  width: 20vw;
+  height: 10vh;
+  background-color: lightgoldenrodyellow;
+}
+
+.d-inline-block2 {
+  display: inline-block;
+  width: calc(300px - 100px);
+  height: 10vh;
+  background-color: lightsteelblue;
+}
+
