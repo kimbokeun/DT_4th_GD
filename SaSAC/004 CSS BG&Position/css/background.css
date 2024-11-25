@@ -1,0 +1,89 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+/*
+
+Background
+  - transparent(default)
+
+Background gradient
+  - 위 > 아래(default)
+
+*/
+
+.background {
+  width: 500px;
+  height: 300px;
+  color: white;
+  background-color: transparent;
+  background: linear-gradient(blue, pink);
+  background: linear-gradient(to right, blue, pink);
+  background: linear-gradient(75deg, blue, pink);
+  background: linear-gradient(0.8turn, royalblue, lightpink);
+  background: linear-gradient(royalblue, 30%, lightpink, 40%, lightgreen);
+}
+
+/* 
+
+Background image
+  - default
+    repeat 
+
+*/
+
+.backgroundImage {
+  width: 700px;
+  height: 500px;
+  background-color: coral;
+  
+  background-image: url(../images/horizen.jpg);
+  
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-repeat: no-repeat; */
+  
+  background-position: center;
+  background-position: left top;
+  background-position: right bottom;
+  /* background-position: 30px 100px; */
+  /*
+  값을 하나만 입력
+   - 수평만 적용
+   - 수직은 center 정렬
+  */
+  /* background-position: 50px;  */
+
+  /* background-size: 30px; */
+  /* 이미지 실제크기 */
+  /* background-size: auto; */
+  /* 
+  비율 유지
+    - cover : 요소의 더 넓은 너비에 맞춤
+    - contain : 요소의 더 짧은 너비에 맞춤
+  */
+  /* background-size: cover; */
+  /* background-size: 100% auto; */
+  /*
+  상황에 따라 다름 
+  가로가 더 넓을 때 cover와 같은 효과
+  */
+  /* background-size: contain; */
+  /* 잘리는 부분 없이 그대로 나옴 */
+  /* background-size: auto 100%; */
+  /*
+  상황에 따라 다름
+  세로가 더 넓을 때 contain와 같은 효과
+  */
+
+  /* 
+  Background Scroll
+    - background-attachment
+    */
+  overflow: scroll;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  background-attachment: local;
+  /* 배경이 요소에 내용에 고정, 함께 스크롤됨 */
+}

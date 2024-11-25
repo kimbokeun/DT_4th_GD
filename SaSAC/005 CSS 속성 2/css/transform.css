@@ -1,0 +1,127 @@
+/* 
+Transform 전환
+  - transform: 변환함수(x축, y축)
+  - x, y, z축
+  - skew : 기울기
+  - rotate : 회전
+  - translate : 이동
+
+  - 
+
+Transition 변환
+  - transition: 속성명 *지속시간* 타이밍함수 대기시간; 
+  
+  - transition-property
+  - transition-duration
+  - transition-timing-function
+  - transition-delay
+
+*/
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* .image-box  */
+.image-box {
+  position: absolute;
+  left: 80px;
+  width: 300px;
+  height: 300px;
+  background-color: lightcyan;
+}
+
+img {
+  width: 100%;
+}
+
+/* 
+Transform 
+  - 모양, 크기, 위치 변경
+*/
+img:hover {
+  /*
+    1. skew() 
+      - 원하는 각도만큼 객체를 기울임
+      - x, y축 각각 부여 가능
+  */  
+
+  transform: skewX(30deg); 
+  transform: skewY(-30deg);
+  transform: skew(30deg, -30deg);
+
+  /*  
+    2. scale()
+      - 크기 조절(확대, 축소)
+      - 1보다 큼 : 확대
+      - 0 ~ 1 : 축소
+  */
+
+
+  /* 
+    3. rotate()
+  */
+
+  transform: rotateX(45deg);
+  transform: rotateY(45deg);
+  transform: rotate(80deg);
+
+  transform: rotateY(180deg);
+  /* backface-visibility: hidden; */
+
+  /* 
+    4. translate()
+      - 이동
+      - translateX() : x축 기준으로 이동
+      - translateY() : y축 기준으로 이동
+      - translate() : x, y축 기준으로 이동
+  */
+
+  transform: translateX(-70px);
+  transform: translateY(-70px);
+  transform: translate(50px, 50px);
+  transform: translate(-50px, -50px);
+
+  /* 
+    5. transition
+      - 일정시간동안 부드럽게 변화가 일어나도록 설정
+      - 지속시간 필수 설정
+  */
+
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+
+/* 간단 실습 01 */
+.outer {
+  width: 240px;
+  height: 240px;
+  background-color: lightblue;
+}
+
+.outer1 {
+  position: relative;
+}
+
+.inner1 {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.inner {
+  width: 80px;
+  height: 80px;
+  background-color: coral;
+}
+
+.outer2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

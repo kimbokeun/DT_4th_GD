@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/*
+static(default)
+  - inline : 왼 > 오
+  - block : 위 > 아래
+
+relative
+  - 상대위치
+  - 자신을 기준
+  - 일반적인 흐름에 따라 배치
+  - 상우하좌 중 하나 작성, 원 위치 기준으로 이동
+  - 배치가 바껴도 원 위치 유지
+  - 이동하려는 하위 요소의 상위 요소에 적용
+
+absolute
+  - 절대위치
+  - 바로 상위 요소 기준
+  - position 속성을 갖은 상위 요소가 없다면 뷰포트(body) 기준
+  - 특정 요소를 기준으로 이동
+  - 배치가 바뀌면 윈 위치 사라짐
+
+fixed
+  - viewport(브라우저)를 기준, 특정 위치 배치
+  - 스크롤해도 움직이지 않음
+  - header 등 특정 컴포넌트에 적용
+
+*/
+
+.position-static {
+  position: static;
+  background-color: pink;
+}
+
+.position-relative {
+  position: relative;
+  left: 300px;
+  background-color: lightsalmon;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 100px;
+  background-color: antiquewhite;
+}
+
+.position-fixed {
+  position: fixed;
+  top: 0;
+  background-color: chartreuse;
+}

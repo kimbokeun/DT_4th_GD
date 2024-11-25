@@ -1,0 +1,140 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Container */
+.container {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  background-color: #444;
+  
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  
+  /* align-items: stretch;(default) */
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline; */
+  
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+  
+  /* align-items: flex-start; */
+  
+}
+
+.items {
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+}
+
+.item1 {
+  /* flex-basis: 100px; */
+  /* flex: 2 1 200px; */
+  font-size: 12px;
+  background-color: lightgreen;
+}
+
+.item2 {
+  flex-basis: 160px;
+  font-size: 16px;
+  background-color: lightgoldenrodyellow;
+}
+
+.item3 {
+  font-size: 24px;
+  background-color: lightsteelblue;
+}
+
+.item4 {
+  font-size: 32px;
+  background-color: lightseagreen;
+}
+
+.item5 {
+  font-size: 40px;
+  background-color: lightsalmon;
+}
+
+/* 
+Flex Box 기본용어
+- 주축(Main Axis)
+flex 컨테이너 내 flex 아이템들이 배치되는 기본 방향을 나타내는 축
+- 교차축(Cross Axis)
+주축에 수직인 축
+
+# 1. flex-direction
+    - flex 방향을 설정(주축 방향)
+    a. row(default) 
+      수평정렬 / 좌 > 우
+        - flex-direction: row-reverse;
+    b. column
+      수직정렬 / 위 > 아래
+        - flex-direction: column;
+        - flex-direction: column-reverse;
+
+# 2. justify-content
+    - 주축을 따라 아이템을 어떻게 배치할 것인가?
+    a. flex-direction이 수평 정렬; 교차축 = column(세로)
+    
+    
+# 3. align-items 교차축
+    a. flex-direction이 수평 정렬; 교차축 = column(세로)
+
+# 4. flex-wrap 줄바꿈(개행) 처리
+  > 컨테이너(상위요소)가 한 줄에 아이템을 다 수용하지 못할 때
+  > 줄바꿈 관련 설정
+    - nowrap(default)
+    - wrap
+    - wrap-reverse
+
+# 5. align-content 여러 행 정렬
+  > 조건 
+    - flex-wrap : wrap / wrap-reverse 상태에
+
+
+Item 속성
+  - order 요소의 배치 순서 제어
+    - 0(default) : order
+  
+  - align-self : Item이 "컨테이너;의 교차축(세로)"에서 어떻게 배치할지
+    - 각 항목에 개별 설정 가능
+    - stretch(default) : container의 교차축 
+
+  - flex-basis : 항목의 "기본 크기"를 지정
+    - flex-grow / flex-shrink와 결헙, 전체적인 크기 조절에 영향
+    - width, height는 기본 크기 설정하지만, flexbox 레이아웃에서는 flex-basis가 우선 적용!
+    - 단위 (px, rem, %) 사용 가능
+    - auto(default) : 컨텐츠의 크기 기준
+      - auto일 땐 width, height 우선 / 아닐 때는 flex-basis 우선
+    - 0 
+
+  - flex-grow 항목이 남는 공간을 얼마나 확장할지 결정
+    - 0(default)
+  - flex-shrink 항목이 부족한 공간에서 얼마나 축소될지 결정
+    - 1(default)
+    - 요소 너비의 영향을 받아 계산이 쉽지 않음
+
+  * 단축 속성
+  flex:
+  flex-grow | flex-shrink | flex-basis
+    증가 너비 | 감소 너비 | 기본 너비
+
+  * 생략
+
+
+
+*/

@@ -1,0 +1,117 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, section, footer {
+  display: flex;
+  padding: 16px;
+}
+
+.item {
+  min-width: 80px;
+  min-height: 80px;
+}
+
+/* header */
+header {
+  justify-content: flex-end;
+  background-color: orange;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .item {
+  background-color: cyan;
+}
+
+header .item-1 {
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+header .item-2 {
+  flex-grow: 2;
+  margin-right: 16px;
+}
+
+/* Section */
+section {
+  flex-grow: 1;
+  justify-content: space-evenly;
+  background-color: yellow;
+}
+
+section .item {
+  background-color: cornflowerblue;
+}
+
+.column {
+  display: flex;
+}
+
+.column-1 {
+  flex-direction: column;
+}
+
+.column-1 .item {
+  flex-grow: 1;
+}
+
+.column-2 {
+  align-items: center;
+}
+
+.column-3 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column-3 .item {
+  flex-grow: 1;
+}
+
+.column-3 .item-1, .column-3 .item-2 {
+  margin-bottom: 16px;
+}
+
+.column-4 {
+  align-items: end;
+}
+
+/* Footer */
+footer {
+  justify-content: space-between;
+  background-color: lightgreen;
+}
+
+footer .item {
+  background-color: lightseagreen;
+}
+
+footer .item-1 {
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+footer .item-2 {
+  flex-grow: 2;
+  margin-right: 16px;
+}
+
+footer .item-3 {
+  flex-grow: 3;
+}
