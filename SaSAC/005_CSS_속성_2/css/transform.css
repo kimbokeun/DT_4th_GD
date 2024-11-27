@@ -1,3 +1,4 @@
+
 /* 
 Transform 전환
   - transform: 변환함수(x축, y축)
@@ -29,10 +30,9 @@ body {
 
 /* .image-box  */
 .image-box {
-  position: absolute;
-  left: 80px;
   width: 300px;
   height: 300px;
+  margin-left: 80px;
   background-color: lightcyan;
 }
 
@@ -97,21 +97,11 @@ img:hover {
   transition: transform 1s;
 }
 
-/* 간단 실습 01 */
+/* 간단 실습 | 가로, 세로 중앙 정렬하기 */
 .outer {
   width: 240px;
   height: 240px;
   background-color: lightblue;
-}
-
-.outer1 {
-  position: relative;
-}
-
-.inner1 {
-  position: absolute;
-  top: 80px;
-  left: 80px;
 }
 
 .inner {
@@ -120,6 +110,19 @@ img:hover {
   background-color: coral;
 }
 
+/* 01 Position 정렬 */
+.outer1 {
+  position: relative;
+}
+
+.inner1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 02 Flex 정렬 */
 .outer2 {
   display: flex;
   align-items: center;

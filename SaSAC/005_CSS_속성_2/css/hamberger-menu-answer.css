@@ -1,0 +1,82 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+nav {
+  position: relative;
+  background-color: #333;
+}
+
+.hamburger-menu-button, .hamburger-icon {
+  display: none;
+}
+
+.hamburger-icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu li a {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: white;
+}
+
+.nav-menu li a:hover {
+  background-color: #444;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background-color: #333;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+
+  .hamburger-menu-button:checked ~ .nav-menu {
+    display: block;
+  }
+
+}

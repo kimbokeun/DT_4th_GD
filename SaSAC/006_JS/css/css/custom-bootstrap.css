@@ -1,0 +1,25 @@
+
+.card-list-wrapper {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.card-list {
+  display: flex;
+  width: 150vw;
+}
+
+.card {
+  margin-right: 16px;
+}
+.card:first-child {
+  margin-left: 24px;
+}
+
+@media (max-width: 389px) {
+
+  .card-list {
+    width: 360vw;
+  }
+
+}

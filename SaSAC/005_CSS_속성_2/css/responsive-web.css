@@ -1,0 +1,92 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 
+# 반응형 웹
+- 다양한 기기와 화면크기에 적응, 웹 페이지의 레이아웃이 유동적으로 변화
+- 다양한 기기에서 사용자 경험 최적화, 일관된 사용성 제공 목적
+# 적응형 웹
+- 사전에 정의된 여러 "고정 레이아웃"을 사용, 다양한 화면 크기에 맞춤
+- 각기 다른 기기를 기준으로 여러 레이아웃 작업, 사용자 기기에 적합한 화면 노출
+*/
+
+header {
+  background-color: wheat;  
+}
+
+main {
+  display: flex;
+  background-color: darkcyan;
+}
+
+section {
+  width: 80%;
+  background-color: darkkhaki;
+}
+
+aside {
+  width: 20%;
+  background-color: sandybrown;  
+}
+
+footer {
+  background-color: orchid;  
+}
+
+/* width ~ 481px */
+@media (max-width: 480px) {
+  header {
+    height: 80px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    width: 100%;
+    height: 80px;
+  }
+
+  section {
+    width: 100%;
+    height: 80px;
+  }
+
+  footer {
+    height: 80px;
+  }
+}
+
+/* width 481px ~ 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    height: 150px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-color: linen;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: limegreen;
+  }
+}
