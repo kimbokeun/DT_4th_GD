@@ -1,0 +1,289 @@
+/* Color */
+
+:root {
+  --color-white : #ffffff;
+
+}
+
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img, strong, b {
+  vertical-align: top;
+}
+
+
+/* Container */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image:
+    url("https://kovostoragedev.blob.core.windows.net/kovo-dev/emblem/emblem_pinkspiders.png"),
+    linear-gradient(rgb(229, 44, 153), rgb(92, 86, 182));
+  background-repeat: no-repeat;
+  background-position: center 98% ;
+  
+}
+
+.list {
+  position: absolute;
+  top: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 952px;
+}
+
+.list-item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  height: 160px;
+  margin: 8px;
+  border: 3px solid rgba(255, 255, 255, .4);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 32px rgba(0, 0, 0, .2);
+  transform: skewX(-15deg);
+}
+
+.back-number {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  height: 36px;
+  line-height: 36px;
+  padding-top: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-top-right-radius: 12px;
+  background-color: rgba(229, 44, 153, 1);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+}
+
+.back-number strong {
+  display: block;
+  color: rgba(255, 255, 255, .75);
+  font-size: 20px;
+  transform: skewX(15deg);
+}
+
+.player-name {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.list-item img {
+  position: relative;
+  left: -4px;
+  height: 100%;
+  opacity: 85%;
+  transform: skewX(15deg);
+}
+
+.list-item:hover {
+  z-index: 2;
+  border-width: 3px;
+  background-color: rgb(92, 86, 182);
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+  transform: skewX(-15deg) scale(130%);
+  transition: transform 0.6s;
+}
+
+.list-item:hover strong {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.6s;
+}
+
+.list-item:hover img {
+  opacity: 100%;
+  transform: skewX(15deg) scale(110%);
+  transition: transform 0.6s;
+}
+
+
+
+
+
+/* 
+.list-item-02 {
+  background-image: url("");
+}
+
+.list-item-03 {
+  background-image: url("");
+}
+
+.list-item-04 {
+  background-image: url("");
+}
+
+.list-item-05 {
+  background-image: url("");
+}
+
+.list-item-06 {
+  background-image: url("");
+}
+
+.list-item-07 {
+  background-image: url("");
+}
+
+.list-item-08 {
+  background-image: url("");
+}
+
+.list-item-09 {
+  background-image: url("");
+}
+
+.list-item-10 {
+  background-image: url("");
+}
+
+.list-item-11 {
+  background-image: url("");
+}
+
+.list-item-12 {
+  background-image: url("");
+}
+
+.list-item-13 {
+  background-image: url("");
+}
+
+.list-item-14 {
+  background-image: url("");
+}
+
+.list-item-15 {
+  background-image: url("");
+}
+
+.list-item-16 {
+  background-image: url("");
+}
+
+.list-item-17 {
+  background-image: url("");
+}
+
+.list-item-18 {
+  background-image: url("");
+}
+
+.list-item-19 {
+  background-image: url("");
+}
+
+.list-item-20 {
+  background-image: url("");
+}
+
+.list-item-21 {
+  background-image: url("");
+} */
+
+/* .list-item-22 {
+  background-image: url("");
+}
+
+.list-item-23 {
+  background-image: url("");
+}
+
+.list-item-24 {
+  background-image: url("");
+}
+
+.list-item-25 {
+  background-image: url("");
+}
+
+.list-item-26 {
+  background-image: url("");
+}
+
+.list-item-27 {
+  background-image: url("");
+}
+
+.list-item-28 {
+  background-image: url("");
+}
+
+.list-item-29 {
+  background-image: url("");
+}
+
+.list-item-30 {
+  background-image: url("");
+}
+
+.list-item-31 {
+  background-image: url("");
+}
+
+.list-item-32 {
+  background-image: url("");
+}
+
+
+<!-- <a class="list-item list-item-22" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-23" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-24" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-25" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-26" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-27" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-28" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-29" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-30" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-31" href="#" target="_black">
+<span class="back-number">11</span>
+</a>
+<a class="list-item list-item-32" href="#" target="_black">
+<span class="back-number">11</span> -->
+</a> */
