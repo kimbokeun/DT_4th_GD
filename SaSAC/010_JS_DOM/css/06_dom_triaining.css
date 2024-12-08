@@ -1,0 +1,32 @@
+/* Reset */
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ /* Contents */
+
+.list {
+  line-height: 1;
+}
+
+.item {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.todo > a {
+  color: black;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.done > a {
+  color: lightgray;
+  text-decoration: line-through;
+  font-style: italic;
+}

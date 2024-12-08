@@ -1,3 +1,4 @@
+/* checkbox */
 h1:hover {
     color: white;
     background-color: black;
@@ -17,11 +18,25 @@ textarea:focus {
     margin-bottom: 40px;
 }
 
-[type="checkbox"] {
+.checkbox [type="checkbox"]:active + label {
+    background-color: lightgray;
+}
+
+button:active {
+    color: white;
+    background-color: gray;
+}
+
+/* checkbox-custom */
+.checkbox-custom {
+    margin-top: 80px;
+}
+
+.checkbox-custom [type="checkbox"] {
     display: none;
 }
 
-label::before {
+.checkbox-custom label::before {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -33,16 +48,11 @@ label::before {
     background-color: yellow;
 }
 
-input:checked + label:before {
+.checkbox ~ input:checked + label:before {
     width: 40px;
     height: 40px;
     line-height: 40px;
     font-size: 24px;
     border-color: orange;
     background-color: green;
-}
-
-button:active {
-    color: white;
-    background-color: gray;
 }

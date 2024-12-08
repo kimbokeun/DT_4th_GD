@@ -1,0 +1,45 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* var */
+
+:root {
+  /* Color */
+  --color-white : #ffffff;
+  --color-primary : #e52c99;
+  --color-secondary : #5c56b6;
+  
+  /* Shadow */
+  --shadow-1 : 0 0 12px rgba(0, 0, 0, .16);
+}
+

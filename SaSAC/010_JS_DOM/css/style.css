@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  line-height: 100px;
+  text-align: center;
+  /* border: 1px solid #000; */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.pink {
+  background-color: pink;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}

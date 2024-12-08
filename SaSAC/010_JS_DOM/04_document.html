@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="04_document.js" defer></script>
+  <!--
+    # defer 속성
+      - JS 파일이 페이지 로딩과 동시에 '비동기'적으로 실행되도록 지시
+        > defer 속성을 사용하면 스크립트가 페이지의 html 파싱이 끝날 때까지 실행되지 않음
+        > 파싱이 끝난 후
+        * 비동기적
+          스크립트가 로드되는 동안 다른 작업들이 동시에 진행 가능
+        * HTML 파싱(Parsing)
+          웹 브라우저가 HTML 문서를 읽고, 이를 DOM 트리로 변환 과정
+   -->
+  <title>JS Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>DOM 연습</h1>
+  <div class="pink">1</div>
+  <div class="pink">2</div>
+  <div class="pink">3</div>
+  <div class="pink">4</div>
+  <div class="others" id="green">5</div>
+  <div class="others" id="red">6</div>
+  <input type="text" name="id" />
+  <input type="button" name="id" value="click" />
+</body>
+</html>

@@ -2,6 +2,8 @@
 
 :root {
   --color-white : #ffffff;
+  --color-primary : #e52c99;
+  --color-secondary : #5c56b6;
 
 }
 
@@ -38,9 +40,9 @@ img, strong, b {
   height: 100vh;
   background-image:
     url("https://kovostoragedev.blob.core.windows.net/kovo-dev/emblem/emblem_pinkspiders.png"),
-    linear-gradient(rgb(229, 44, 153), rgb(92, 86, 182));
+    linear-gradient(var(--color-primary), var(--color-secondary));
   background-repeat: no-repeat;
-  background-position: center 98% ;
+  background-position: right 98% ;
   
 }
 
