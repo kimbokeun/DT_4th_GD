@@ -1,0 +1,225 @@
+/* ---------------------------------------------------------------
+  # Heading
+--------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 { text-transform: capitalize; }
+h1 { font-size: var(--size-64); font-weight: 700; }
+h2 { font-size: var(--size-56); font-weight: 700; }
+h3 { font-size: var(--size-48); font-weight: 400; }
+h4 { font-size: var(--size-32); font-weight: 400; }
+h5 { font-size: var(--size-24); font-weight: 400; }
+h6 { font-size: var(--size-16); font-weight: 400; }
+
+/* ---------------------------------------------------------------
+  # Container
+--------------------------------------------------------------- */
+.container {
+  padding: var(--size-80);
+}
+
+/* ---------------------------------------------------------------
+  # Section Common
+--------------------------------------------------------------- */
+.section-title {
+  margin-bottom: var(--size-64);
+}
+
+/* ---------------------------------------------------------------
+  # Section 1. Colors
+--------------------------------------------------------------- */
+.color {
+  margin-bottom: var(--size-24);
+}
+
+.color-name {
+  margin-bottom: var(--size-2);
+  color: var(--color-coolgray-200);
+  font-size: var(--size-20);
+}
+
+.color-chips {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-chip {
+  width: 100%;
+  padding: var(--size-4);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: var(--size-8);
+  background-color: var(--color-white);
+  transition: all .2s;
+}
+
+.color-chip:hover {
+  z-index: 1;
+  border: 1px solid var(--color-coolgray-800);
+  box-shadow: var(--shadow-1);
+}
+
+.color-chips .color-chip:last-child {
+  margin-right: 0;
+}
+
+.color-area {
+  width: 100%;
+  display: inline-block;
+  height: 40px;
+  margin-bottom: var(--size-2);
+  border-radius: var(--size-4);
+  transition: all .2s;
+}
+
+.color-number {
+  display: block;
+  color: var(--color-warmgray-600);
+  font-size: var(--size-14);
+  text-align: right;
+}
+
+.color-chip:hover .color-number {
+  color: var(--color-warmgray-400);
+  
+}
+
+/* ---------------------------------------------------------------
+  > Red
+--------------------------------------------------------------- */
+.red .c900 .color-area { background-color: var(--color-red-900); }
+.red .c800 .color-area { background-color: var(--color-red-800); }
+.red .c700 .color-area { background-color: var(--color-red-700); }
+.red .c600 .color-area { background-color: var(--color-red-600); }
+.red .c500 .color-area { background-color: var(--color-red-500); }
+.red .c400 .color-area { background-color: var(--color-red-400); }
+.red .c300 .color-area { background-color: var(--color-red-300); }
+.red .c200 .color-area { background-color: var(--color-red-200); }
+.red .c100 .color-area { background-color: var(--color-red-100); }
+
+/* ---------------------------------------------------------------
+  > Orange
+--------------------------------------------------------------- */
+.orange .c900 .color-area { background-color: var(--color-orange-900); }
+.orange .c800 .color-area { background-color: var(--color-orange-800); }
+.orange .c700 .color-area { background-color: var(--color-orange-700); }
+.orange .c600 .color-area { background-color: var(--color-orange-600); }
+.orange .c500 .color-area { background-color: var(--color-orange-500); }
+.orange .c400 .color-area { background-color: var(--color-orange-400); }
+.orange .c300 .color-area { background-color: var(--color-orange-300); }
+.orange .c200 .color-area { background-color: var(--color-orange-200); }
+.orange .c100 .color-area { background-color: var(--color-orange-100); }
+
+/* ---------------------------------------------------------------
+  > Yellow
+--------------------------------------------------------------- */
+.yellow .c900 .color-area { background-color: var(--color-yellow-900); }
+.yellow .c800 .color-area { background-color: var(--color-yellow-800); }
+.yellow .c700 .color-area { background-color: var(--color-yellow-700); }
+.yellow .c600 .color-area { background-color: var(--color-yellow-600); }
+.yellow .c500 .color-area { background-color: var(--color-yellow-500); }
+.yellow .c400 .color-area { background-color: var(--color-yellow-400); }
+.yellow .c300 .color-area { background-color: var(--color-yellow-300); }
+.yellow .c200 .color-area { background-color: var(--color-yellow-200); }
+.yellow .c100 .color-area { background-color: var(--color-yellow-100); }
+
+/* ---------------------------------------------------------------
+  > Green
+--------------------------------------------------------------- */
+.green .c900 .color-area { background-color: var(--color-green-900); }
+.green .c800 .color-area { background-color: var(--color-green-800); }
+.green .c700 .color-area { background-color: var(--color-green-700); }
+.green .c600 .color-area { background-color: var(--color-green-600); }
+.green .c500 .color-area { background-color: var(--color-green-500); }
+.green .c400 .color-area { background-color: var(--color-green-400); }
+.green .c300 .color-area { background-color: var(--color-green-300); }
+.green .c200 .color-area { background-color: var(--color-green-200); }
+.green .c100 .color-area { background-color: var(--color-green-100); }
+
+/* ---------------------------------------------------------------
+  > Cyan
+--------------------------------------------------------------- */
+.cyan .c900 .color-area { background-color: var(--color-cyan-900); }
+.cyan .c800 .color-area { background-color: var(--color-cyan-800); }
+.cyan .c700 .color-area { background-color: var(--color-cyan-700); }
+.cyan .c600 .color-area { background-color: var(--color-cyan-600); }
+.cyan .c500 .color-area { background-color: var(--color-cyan-500); }
+.cyan .c400 .color-area { background-color: var(--color-cyan-400); }
+.cyan .c300 .color-area { background-color: var(--color-cyan-300); }
+.cyan .c200 .color-area { background-color: var(--color-cyan-200); }
+.cyan .c100 .color-area { background-color: var(--color-cyan-100); }
+
+/* ---------------------------------------------------------------
+  > Light Blue
+--------------------------------------------------------------- */
+.light-blue .c900 .color-area { background-color: var(--color-lightblue-900); }
+.light-blue .c800 .color-area { background-color: var(--color-lightblue-800); }
+.light-blue .c700 .color-area { background-color: var(--color-lightblue-700); }
+.light-blue .c600 .color-area { background-color: var(--color-lightblue-600); }
+.light-blue .c500 .color-area { background-color: var(--color-lightblue-500); }
+.light-blue .c400 .color-area { background-color: var(--color-lightblue-400); }
+.light-blue .c300 .color-area { background-color: var(--color-lightblue-300); }
+.light-blue .c200 .color-area { background-color: var(--color-lightblue-200); }
+.light-blue .c100 .color-area { background-color: var(--color-lightblue-100); }
+
+/* ---------------------------------------------------------------
+  > Blue
+--------------------------------------------------------------- */
+.blue .c900 .color-area { background-color: var(--color-blue-900); }
+.blue .c800 .color-area { background-color: var(--color-blue-800); }
+.blue .c700 .color-area { background-color: var(--color-blue-700); }
+.blue .c600 .color-area { background-color: var(--color-blue-600); }
+.blue .c500 .color-area { background-color: var(--color-blue-500); }
+.blue .c400 .color-area { background-color: var(--color-blue-400); }
+.blue .c300 .color-area { background-color: var(--color-blue-300); }
+.blue .c200 .color-area { background-color: var(--color-blue-200); }
+.blue .c100 .color-area { background-color: var(--color-blue-100); }
+
+/* ---------------------------------------------------------------
+  > Violet Blue
+--------------------------------------------------------------- */
+.violet-blue .c900 .color-area { background-color: var(--color-violetblue-900); }
+.violet-blue .c800 .color-area { background-color: var(--color-violetblue-800); }
+.violet-blue .c700 .color-area { background-color: var(--color-violetblue-700); }
+.violet-blue .c600 .color-area { background-color: var(--color-violetblue-600); }
+.violet-blue .c500 .color-area { background-color: var(--color-violetblue-500); }
+.violet-blue .c400 .color-area { background-color: var(--color-violetblue-400); }
+.violet-blue .c300 .color-area { background-color: var(--color-violetblue-300); }
+.violet-blue .c200 .color-area { background-color: var(--color-violetblue-200); }
+.violet-blue .c100 .color-area { background-color: var(--color-violetblue-100); }
+
+/* ---------------------------------------------------------------
+  > Purple
+--------------------------------------------------------------- */
+.purple .c900 .color-area { background-color: var(--color-purple-900); }
+.purple .c800 .color-area { background-color: var(--color-purple-800); }
+.purple .c700 .color-area { background-color: var(--color-purple-700); }
+.purple .c600 .color-area { background-color: var(--color-purple-600); }
+.purple .c500 .color-area { background-color: var(--color-purple-500); }
+.purple .c400 .color-area { background-color: var(--color-purple-400); }
+.purple .c300 .color-area { background-color: var(--color-purple-300); }
+.purple .c200 .color-area { background-color: var(--color-purple-200); }
+.purple .c100 .color-area { background-color: var(--color-purple-100); }
+
+/* ---------------------------------------------------------------
+  > Cool Gray
+--------------------------------------------------------------- */
+.cool-gray .c900 .color-area { background-color: var(--color-coolgray-900); }
+.cool-gray .c800 .color-area { background-color: var(--color-coolgray-800); }
+.cool-gray .c700 .color-area { background-color: var(--color-coolgray-700); }
+.cool-gray .c600 .color-area { background-color: var(--color-coolgray-600); }
+.cool-gray .c500 .color-area { background-color: var(--color-coolgray-500); }
+.cool-gray .c400 .color-area { background-color: var(--color-coolgray-400); }
+.cool-gray .c300 .color-area { background-color: var(--color-coolgray-300); }
+.cool-gray .c200 .color-area { background-color: var(--color-coolgray-200); }
+.cool-gray .c100 .color-area { background-color: var(--color-coolgray-100); }
+
+/* ---------------------------------------------------------------
+  > Warm Gray
+--------------------------------------------------------------- */
+.warm-gray .c900 .color-area { background-color: var(--color-warmgray-900); }
+.warm-gray .c800 .color-area { background-color: var(--color-warmgray-800); }
+.warm-gray .c700 .color-area { background-color: var(--color-warmgray-700); }
+.warm-gray .c600 .color-area { background-color: var(--color-warmgray-600); }
+.warm-gray .c500 .color-area { background-color: var(--color-warmgray-500); }
+.warm-gray .c400 .color-area { background-color: var(--color-warmgray-400); }
+.warm-gray .c300 .color-area { background-color: var(--color-warmgray-300); }
+.warm-gray .c200 .color-area { background-color: var(--color-warmgray-200); }
+.warm-gray .c100 .color-area { background-color: var(--color-warmgray-100); }

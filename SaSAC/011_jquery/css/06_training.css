@@ -1,0 +1,213 @@
+/* ---------------------------------------------------------------
+  # Container
+--------------------------------------------------------------- */
+.container {
+  width: 100%;
+  min-height: 1080px;
+  padding: 40px;
+  background-color: var(--color-warmgray-900);
+}
+
+/* ---------------------------------------------------------------
+  form
+--------------------------------------------------------------- */
+.submit-button {
+  padding: 4px 8px;
+  color: var(--color-white);
+  font-size: var(--size-14);
+  border-radius: 4px;
+  background-color: var(--color-cyan-500);
+}
+
+.submit-button:hover {
+  background-color: var(--color-cyan-400);
+}
+
+/* ---------------------------------------------------------------
+  # Calendar
+--------------------------------------------------------------- */
+.calendar-area {
+  width: 800px;
+  margin-top: 24px;
+  padding: 48px 56px;
+  border-radius: 40px;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-1);
+}
+
+/* ---------------------------------------------------------------
+  # Calendar > Top area
+--------------------------------------------------------------- */
+
+.top-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-month {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-warmgray-200);
+}
+
+.date-year {
+  font-size: 20px;
+  color: var(--color-warmgray-500);
+}
+
+.month-eng {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: var(--color-coolgray-700);
+}
+
+/* ---------------------------------------------------------------
+  # Calendar > Weeks
+--------------------------------------------------------------- */
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-coolgray-700);
+  /* border-bottom: 1px solid var(--color-coolgray-800); */
+}
+
+/* ---------------------------------------------------------------
+  # Calendar > Day names
+--------------------------------------------------------------- */
+
+.day-names {
+  display: flex;
+}
+
+.day-name {
+  width: calc(100% / 7);
+  margin-top: 32px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-coolgray-700);
+  text-align: right;
+  text-transform: uppercase;
+  word-spacing: 1px;
+}
+
+.day-names .sun {
+  color: var(--color-red-700);
+}
+
+.day-names .sat {
+  color: var(--color-lightblue-700);
+}
+
+/* ---------------------------------------------------------------
+  # Calendar > Days
+--------------------------------------------------------------- */
+
+.day {
+  position: relative;
+  width: calc(100% / 7);
+  height: 120px;
+  border-right: 1px solid var(--color-coolgray-900);
+  border-bottom: 2px solid var(--color-coolgray-900);
+}
+
+.days .day:nth-child(7n) {
+  border-right-width: 0;
+}
+
+.day-number {
+  display: inline-block;
+  min-width: var(--size-32);
+  margin-bottom: var(--size-4);
+  padding-top: var(--size-8);
+  padding-bottom: var(--size-8);
+  color: var(--color-warmgray-500);
+  font-size: var(--size-14);
+  font-weight: normal;
+  text-align: center;
+  border-bottom-right-radius: var(--size-8);
+  background-color: var(--color-coolgray-900);
+}
+
+.sunday {
+  color: var(--color-red-600);
+  background-color: var(--color-red-900);
+}
+
+.saturday {
+  color: var(--color-lightblue-600);
+  background-color: var(--color-lightblue-900);
+}
+
+/* ---------------------------------------------------------------
+  # Calendar > Day
+--------------------------------------------------------------- */
+.button-add-schedule {
+  display: none;
+  position: absolute;
+  top: var(--size-4);
+  right: var(--size-4);
+  padding: 4px 4px;
+  color: var(--color-cyan-500);
+  font-size: var(--size-12);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-cyan-800);
+  /* transition: all .2s; */
+}
+
+.day:hover .button-add-schedule {
+  display: block;
+}
+
+.button-add-schedule:hover {
+  background-color: var(--color-cyan-900);
+  border-color: var(--color-cyan-700);
+}
+
+/* ---------------------------------------------------------------
+  # Day > Schedule Item
+--------------------------------------------------------------- */
+
+.schedule-item {
+  display: block;
+  margin: var(--size-4);
+  padding: var(--size-4);
+  color: var(--color-purple-600);
+  font-size: var(--size-14);
+  border-left: 4px solid var(--color-purple-600);
+  border-radius: var(--size-4);
+  background-color: var(--color-purple-900);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+.schedule-item:hover {
+  color: var(--color-purple-500);
+  border-left: 4px solid var(--color-purple-500);
+  background-color: var(--color-purple-800);
+}
+
+.schedule-item:hover::after {
+  /* opacity: 1; */
+}
+
+.schedule-item::after {
+  opacity: 0;
+  content: "+";
+  position: absolute;
+  right: var(--size-8);
+  width: var(--size-12);
+  height: var(--size-12);
+  text-align: center;
+  color: var(--color-purple-600);
+  border-radius: 50%;
+  border: 1px solid var(--color-purple-700);
+}

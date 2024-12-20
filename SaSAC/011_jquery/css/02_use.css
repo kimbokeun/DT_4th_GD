@@ -1,0 +1,15 @@
+body {
+  padding-bottom: 500px;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.bg-pink {
+  background-color: pink;
+}

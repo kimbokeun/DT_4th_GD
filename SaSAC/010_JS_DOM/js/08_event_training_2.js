@@ -3,21 +3,25 @@
 //  2) 댓글이 등록되면 아이디는 굵은 글씨
 //  3) 댓글 등록 후 input 창 초기화
 
-// Selector
 const container = document.querySelector(".container");
 const inputId = document.querySelector("#id");
 const inputReply = document.querySelector("#reply");
 const buttonSummit = document.querySelector(".button-summit");
-
-// Create Element
 const list = document.createElement("ul");
-const listItem = document.createElement("li");
-container.append(list);
+list.classList.add("list");
 
 buttonSummit.addEventListener("click", (e) => {
+  e.preventDefault();
+  container.append(list);
+  
+  const listItem = document.createElement("li");
   list.append(listItem);
-  listItem.innerHTML = `<b>${inputId.value}</b> - ${inputId.value}`;
+  listItem.classList.add("list-item");
+
+  if (inputId !== "" && inputReply !== "") {
+    listItem.innerHTML = `<b>${inputId.value}</b> - ${inputReply.value}`;
+  }
+
   inputId.value = "";
   inputReply.value = "";
 });
-

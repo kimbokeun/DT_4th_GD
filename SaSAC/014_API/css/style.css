@@ -1,0 +1,23 @@
+.post {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul p {
+  width: 200px;
+}
+
+ul img {
+  margin: 1rem;
+}

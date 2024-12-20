@@ -6,7 +6,7 @@
   <title>J-query</title>
   <script src="./js/02_use.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/01_start.css">
+  <link rel="stylesheet" href="./css/02_use.css">
 </head>
 <body>
   <h1>J-query 동작 함수</h1>
@@ -24,5 +24,89 @@
   <button type="button" onclick="changeCssJs()">JS</button>
   <button type="button" onclick="changeCssJquery()">J query</button>
   <button type="button" onclick="getCssJquery()">J quer로 css값 가져오기</button>
+
+  <hr>
+  <h2>attr()</h2>
+  <a href="https://www.google.com" target="_blank">Google</a>
+  <br>
+  <button type="button" onclick="changeAttrJS()">JS로 바꾸기</button>
+  <button type="button" onclick="changeAttrJquery()">JQuery로 바꾸기</button>
+  
+  <hr>
+  <h2>text()</h2>
+  <p class="p-text">안녕하세요?</p>
+  <button type="button" onclick="changeTextJS()">JS로 바꾸기</button>
+  <button type="button" onclick="changeTextJquery()">JQuery로 바꾸기</button>
+  
+  <hr>
+  <h2>html()</h2>
+  <p class="p-html">안녕하세요?</p>
+  <button type="button" onclick="changeHtmlJS()">JS로 바꾸기</button>
+  <button type="button" onclick="changeHtmlJquery()">JQuery로 바꾸기</button>
+  
+  <hr>
+  <h2>요소 추가하기</h2>
+  <ul class="colors">
+    <li class="orange">orange</li>
+    <li class="green">green</li>
+    <li class="navy">navy</li>
+  </ul>
+  
+  <h3>append() - 선택된 요소의 자식 요소 중 마지막에 추가</h3>
+  <button type="button" onclick="appendJS()">JS로 바꾸기</button>
+  <button type="button" onclick="appendJquery()">JQuery로 바꾸기</button>
+  
+  <h3>prepend() - 선택된 요소의 자식 요소 중 맨 처음에 추가</h3>
+  <button type="button" onclick="prependJS()">JS로 바꾸기</button>
+  <button type="button" onclick="prependJquery()">JQuery로 바꾸기</button>
+  
+  <h3>before() - 선택된 요소의 형제 요소 중 이전 형제로 추가</h3>
+  <button type="button" onclick="beforeJS()">JS로 바꾸기</button>
+  <button type="button" onclick="beforeJquery()">JQuery로 바꾸기</button>  
+  
+  <h3>after() - 선택된 요소의 형제 요소 중 이후 형제로 추가</h3>
+  <button type="button" onclick="afterJS()">JS로 바꾸기</button>
+  <button type="button" onclick="afterJquery()">JQuery로 바꾸기</button>
+  
+  <h2>요소 제거하기</h2>
+  <ul class="nums">
+    <li>요소</li>
+    <li>요소</li>
+    <li id="li2">삭제할 요소</li>
+  </ul>
+
+  <h3>remove() - 선택된 요소의 형제 요소 중 이후 형제로 추가</h3>
+  <button type="button" onclick="removeJS()">JS로 바꾸기</button>
+  <button type="button" onclick="removeJquery()">JQuery로 바꾸기</button>
+  
+
+  <h3>empty() - 선택된 요소의 형제 요소 중 이후 형제로 추가</h3>
+  <button type="button" onclick="emptyJS()">JS로 바꾸기</button>
+  <button type="button" onclick="emptyJquery()">JQuery로 바꾸기</button>
+  
+  <hr>
+
+  <h3>요소 탐색</h3>
+  <div class="ancestors">
+    <div class="parents">
+      <div class="child1">Child 1</div>
+      <div class="child2">Child 2</div>
+      <div class="child3">Child 3</div>
+    </div>
+  </div>
+  <button type="button" onclick="findParent()">부모 찾기</button>
+  <button type="button" onclick="findParents()">조상 찾기</button>
+  <button type="button" onclick="findNext()">다음 형제 찾기</button>
+  <button type="button" onclick="findPrev()">이전 형제 찾기</button>
+  <button type="button" onclick="findChildren()">모든 자식 찾기</button>
+  
+  <hr>
+  <h3>클래스 조작</h3>
+  <p id="hi" class="color-blue">안녕하세요?</p>
+  <button type="button" onclick="addClass()">클래스 추가</button>
+  <button type="button" onclick="removeClass()">클래스 삭제</button>
+  <button type="button" onclick="hasClass()">클래스 유무 확인</button>
+  <button type="button" onclick="toggleClass()">클래스 토글</button>
+  
 </body>
 </html>

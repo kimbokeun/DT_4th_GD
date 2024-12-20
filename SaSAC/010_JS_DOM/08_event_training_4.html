@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Event Training 4</title>
+    <script src="./js/08_event_training_4.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/08_event_training_4.css" />
+  </head>
+  <body>
+    <h1>여기는 방명록!!</h1>
+    <form action="">
+      <label for="writer">작성자</label>
+      <input type="text" id="writer" autocomplete="off" />
+      <br />
+      <br />
+
+      <label for="contents">내용</label>
+      <input
+        type="text"
+        id="contents"
+        style="width: 500px"
+        autocomplete="off"
+      />
+      <br />
+      <br />
+
+      <button type="button" onclick="writeNote();">등록</button>
+    </form>
+
+    <br />
+    <br />
+    
+    <table id="table">
+      <tr>
+        <th>작성자</th>
+        <th>내용</th>
+        <th>작성일</th>
+      </tr>
+    </table>
+  </body>
+</html>
